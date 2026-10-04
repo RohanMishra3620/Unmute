@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en-IN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#FDF7F0">
+  <title>About · Unmute</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="./css/app.css">
+</head>
+<body class="page">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header">
+  <a class="logo" href="index.html" aria-label="Unmute home">
+    <svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 34c-1-12 6-20 18-21 1 12-5 21-18 21z" fill="#6E9A55"/><path d="M8 34c5-8 10-13 18-21" stroke="#fff" stroke-opacity=".55" stroke-width="1.6" fill="none" stroke-linecap="round"/><path d="M24 26c0-11 7-18 19-19 0 12-7 19-19 19z" fill="#F6A119"/><path d="M24 26c6-6 11-12 19-19" stroke="#fff" stroke-opacity=".6" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>
+    <span class="the">the</span><span class="mute">unmute</span>
+  </a>
+  <nav class="nav" aria-label="Main">
+    <button class="pill primary" type="button" data-start aria-label="Start Session">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21v-9"/><path d="M12 12c0-4-3-6-7-6 0 4 3 6 7 6z"/><path d="M12 14c0-3 2-5 6-5 0 3-2 5-6 5z"/></svg>
+      <span class="lbl">Start Session</span>
+    </button>
+    <a class="pill" href="#" data-report aria-label="View Report">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 3H7a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V8z"/><path d="M14 3v5h5"/><path d="M9 13h6M9 17h6"/></svg>
+      <span class="lbl">View Report</span>
+    </a>
+    <a class="pill" href="about.html" aria-label="About">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 11v5"/><circle cx="12" cy="7.8" r=".6" fill="currentColor"/></svg>
+      <span class="lbl">About</span>
+    </a>
+  </nav>
+</header>
+<div class="banner" role="img" aria-label="A person resting under a tree and watching the sunset by a lake"></div>
+<main id="main" class="content">
+  <h1>About Unmute</h1>
+  <p class="meta">It's okay to feel. It's okay to talk.</p>
+
+  <section class="panel"><h2><span class="dot"></span>What is Unmute?</h2>
+    <p class="about-p">Unmute is a quiet place to talk about how you are feeling. It is made for people who are going through a hard time, such as victims of atrocities who are waiting for an investigation, a trial or compensation, and who may not have someone to talk to every day.</p>
+    <p class="about-p">You chat for a few minutes, in simple words. At the end, you get a short reflection of what you shared. The idea is to notice changes in your well-being early, so that the right human support can reach you in time.</p>
+  </section>
+
+  <section class="panel leaf"><h2><span class="dot"></span>How your 5-minute session works</h2>
+    <ol class="steps">
+      <li><span><b>Talk freely.</b> Type in your own words, or tap a quick reply. There are no right or wrong answers.</span></li>
+      <li><span><b>We listen for your feelings.</b> The chat looks at the words you use to understand stress, fear, worry or low mood, and checks for your safety.</span></li>
+      <li><span><b>See your reflection.</b> You get a simple report with the feelings noticed and a few small steps you can try.</span></li>
+    </ol>
+  </section>
+
+  <div class="grid2">
+    <section class="panel"><h2><span class="dot"></span>Your privacy</h2>
+      <p class="about-p">We do not ask for your name, phone number or address. You can delete your session and report at any time from the report page.</p></section>
+    <section class="panel"><h2><span class="dot"></span>What Unmute is not</h2>
+      <p class="about-p">Unmute is an AI support tool. It is not a doctor, therapist or emergency service, and it does not give a diagnosis. This is an early prototype.</p></section>
+  </div>
+
+  <section class="panel alert"><h2>If you are in danger or thinking of hurting yourself</h2>
+    <p>If you are in immediate danger or think you may hurt yourself or someone else, contact your local emergency service or go to the nearest emergency department. If possible, stay with someone you trust.</p>
+    <ul class="list">
+      <li>Emergency services: <strong><a href="tel:112">112</a></strong></li>
+      <li>Tele-MANAS (India): <strong><a href="tel:14416">14416</a></strong></li>
+    </ul>
+  </section>
+
+  <div class="actions"><button class="btn primary" type="button" data-start style="font-size:1rem;padding:14px 28px">Start a session</button></div>
+</main>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+<script src="./js/config.js"></script>
+<script src="./js/app.js"></script>
+</body>
+</html>

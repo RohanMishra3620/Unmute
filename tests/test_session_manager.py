@@ -1,5 +1,5 @@
-from models.database import Database
-from services.session_manager import SessionManager, SessionNotFound
+from backend.models.database import Database
+from backend.services.session_manager import SessionManager, SessionNotFound
 import pytest
 from tests.conftest import FakeClock
 

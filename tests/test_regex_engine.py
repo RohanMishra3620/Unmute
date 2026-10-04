@@ -1,5 +1,5 @@
 import pytest
-from services.regex_engine import analyze, violates_output_policy
+from backend.services.regex_engine import analyze, violates_output_policy
 
 
 def test_normal_message_is_safe():

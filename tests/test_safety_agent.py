@@ -1,6 +1,6 @@
-from agents.safety_agent import SafetyAgent
-from config import Config
-from services.regex_engine import analyze
+from backend.agents.safety_agent import SafetyAgent
+from backend.config import Config
+from backend.services.regex_engine import analyze
 
 agent = SafetyAgent(Config.as_dict())
 

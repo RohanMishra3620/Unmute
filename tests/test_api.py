@@ -15,9 +15,9 @@ def sentences(t):
     return [s for s in re.split(r"(?<=[.!?])\s+", t) if s]
 
 
-def test_index_is_branded(client):
-    r = client.get("/")
-    assert r.status_code == 200 and b"Unmute" in r.data and b"MindCare" not in r.data
+def test_health(client):
+    r = client.get("/health")
+    assert r.status_code == 200 and r.json["status"] == "ok"
 
 
 def test_normal_conversation(client):
@@ -44,7 +44,8 @@ def test_session_expiration(client, clock):
     sid = start(client)
     clock.advance(301)
     r = say(client, sid, "are you there")
-    assert r.status_code == 410 and r.json["report_url"].endswith(sid)
+    assert r.status_code == 410
+    assert r.json.get("session_id") == sid or r.json.get("error") == "session_expired"
     assert client.get(f"/api/session/{sid}/report").status_code == 200
     assert say(client, sid, "hello").status_code == 409
 
@@ -55,11 +56,12 @@ def test_report_generation(client):
     assert client.get(f"/api/session/{sid}/report").status_code == 409  # still running
     r = client.post("/api/session/end", json={"session_id": sid})
     assert r.status_code == 200
+    assert "report" in r.json and r.json["session_id"] == sid
+    assert "report_url" not in r.json
     rep = client.get(f"/api/session/{sid}/report").json
     assert "stress" in rep["dominant_emotions"] and "academic pressure" in rep["main_topics"]
     assert rep["risk_level"] == "LOW_CONCERN" and "not a medical diagnosis" in rep["disclaimer"]
     assert "disorder" not in rep["summary"].lower()
-    assert client.get(f"/report/{sid}").status_code == 200
 
 
 def test_invalid_session_id(client):
@@ -83,3 +85,9 @@ def test_delete_session(client):
     assert client.get(f"/api/session/{sid}").status_code == 404
     assert say(client, sid, "hi").status_code == 404
     assert client.delete(f"/api/session/{sid}").status_code == 404
+
+
+def test_api_pages_removed(client):
+    """Backend is API-only; page routes no longer exist."""
+    assert client.get("/").status_code == 404
+    assert client.get("/about").status_code == 404

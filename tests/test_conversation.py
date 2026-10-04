@@ -1,4 +1,4 @@
-from services.regex_engine import analyze
+from backend.services.regex_engine import analyze
 from tests.test_api import say, sentences, start
 
 
@@ -38,6 +38,3 @@ def test_closing_reply_near_the_end(client, clock):
     assert r.status_code == 200 and "take care" in r.json["reply"].lower() or "trust" in r.json["reply"].lower()
 
 
-def test_about_page_and_unmute_branding(client):
-    r = client.get("/about")
-    assert r.status_code == 200 and b"Unmute" in r.data and b"14416" in r.data
