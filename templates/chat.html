@@ -1,0 +1,42 @@
+{% extends "base.html" %}
+{% block title %}{{ app_name }} · Your session{% endblock %}
+{% block bodyclass %}scene{% endblock %}
+{% block body %}
+<header class="site-header">{{ ui.logo(true) }}
+  <nav class="nav" aria-label="Main"><a class="pill" href="/about" aria-label="About">{{ ui.info() }}<span class="lbl">About</span></a></nav>
+</header>
+<main id="main" class="chat-wrap">
+  <section id="chat-root" class="chat-card" data-sid="{{ sid }}" data-total="{{ total_seconds }}" aria-label="Chat session">
+    <div class="chat-head">
+      <div class="who"><span class="avatar">{{ ui.leaves() }}</span><div><b>{{ app_name }}</b><small>Private and anonymous</small></div></div>
+      <div class="head-actions">
+        <span class="timer" aria-live="off"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2M9 3h6"/></svg><time id="timer">--:--</time><span class="sr-only">left</span></span>
+        <button id="help" class="mini" type="button" aria-expanded="false" aria-controls="helplines">Need help now?</button>
+        <button id="end" class="mini" type="button">End session</button>
+      </div>
+    </div>
+    <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+    <div id="helplines" class="helplines" role="region" aria-label="Helplines" hidden>
+      <p id="help-msg">{{ emergency_message }}</p>
+      {% if contacts %}<ul>{% for c in contacts %}<li><a href="tel:{{ c.number|replace(' ', '') }}">{{ c.label }}: {{ c.number }}</a></li>{% endfor %}</ul>{% endif %}
+    </div>
+    <div id="messages" class="log" role="log" aria-live="polite" aria-label="Conversation">
+      <p class="intro">Take your time. There are no right or wrong answers, and you can type in your own words.</p>
+    </div>
+    <div id="chips" class="chips" aria-label="Quick replies"></div>
+    <p id="status" class="status" role="status"></p>
+    <form id="form" class="compose" autocomplete="off">
+      <label for="input" class="sr-only">Your message</label>
+      <textarea id="input" rows="1" maxlength="1000" placeholder="Type here, or tap a quick reply above..."></textarea>
+      <button id="send" class="send" type="submit" aria-label="Send message"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></button>
+    </form>
+    <p class="foot">AI support tool. Not a doctor, therapist or emergency service.</p>
+  </section>
+</main>
+<dialog id="endDialog" aria-labelledby="endTitle">
+  <h2 id="endTitle">End this session?</h2>
+  <p>You will see your reflection report next. You can also keep talking until the timer finishes.</p>
+  <div class="acts"><button id="keep" class="btn ghost" type="button">Keep talking</button><button id="confirmEnd" class="btn primary" type="button">End and see report</button></div>
+</dialog>
+{% endblock %}
+{% block scripts %}<script src="{{ url_for('static', filename='js/chat.js') }}"></script>{% endblock %}

@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block body %}
+<header class="site-header">{{ ui.logo() }}{{ ui.nav() }}</header>
+<main id="main" class="hero">
+  <div class="hero-copy">
+    {% if notice %}<p class="notice" role="status">{{ notice }}</p>{% endif %}
+    <p class="eyebrow">It's okay to feel. It's okay to talk.</p>
+    <div class="rule"></div>
+    <h1><span class="l1">Your Mental Health</span> <span class="accent">Matters Here</span></h1>
+    <p class="lead">A safe and supportive space to talk, understand, and feel better — with care backed by real expertise.</p>
+    <button class="btn primary" type="button" data-start>Start Your Session {{ ui.arrow() }}</button>
+    <p id="err" class="err" role="alert" hidden></p>
+    <ul class="trust">
+      <li><span class="badge heart">{{ ui.heart() }}</span><div><strong>Talk Freely</strong><span class="sub">Without Judgment</span></div></li>
+      <li><span class="badge leaf">{{ ui.sprout() }}</span><div><strong>Expert Support</strong><span class="sub">Trusted Professionals</span></div></li>
+      <li><span class="badge shield">{{ ui.shield() }}</span><div><strong>Your Privacy</strong><span class="sub">Always Protected</span></div></li>
+    </ul>
+    <p class="fine">Your {{ minutes }}-minute chat is anonymous. {{ app_name }} is an AI support tool. It is not a doctor, therapist or emergency service.</p>
+  </div>
+</main>
+{% endblock %}

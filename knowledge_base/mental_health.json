@@ -1,0 +1,313 @@
+{
+ "stress": {
+  "title": "Stress",
+  "description": "Stress is the body's response to pressure or demands that feel hard to manage.",
+  "common_signs": [
+   "tension",
+   "irritability",
+   "feeling overwhelmed"
+  ],
+  "coping": [
+   "Break the biggest task into one small step.",
+   "Take a 5-minute break away from screens.",
+   "Write down what is in your control and what is not."
+  ],
+  "seek_help": "If stress stays high for weeks or affects daily life, a counsellor can help.",
+  "safety_note": "Stress is common and is not a personal failing."
+ },
+ "anxiety": {
+  "title": "Anxiety",
+  "description": "Anxiety is a feeling of worry or fear that can show up in both thoughts and body.",
+  "common_signs": [
+   "racing thoughts",
+   "restlessness",
+   "fast heartbeat"
+  ],
+  "coping": [
+   "Try slowly breathing in for 4 and out for 6.",
+   "Name 3 things you can see around you.",
+   "Write the worry down, then note one small action."
+  ],
+  "seek_help": "If worry feels constant or stops you doing things, consider talking to a professional.",
+  "safety_note": "Anxious feelings are uncomfortable but usually pass."
+ },
+ "low_mood": {
+  "title": "Low mood",
+  "description": "Low mood is a lasting feeling of sadness, emptiness or loss of interest.",
+  "common_signs": [
+   "sadness",
+   "low energy",
+   "losing interest"
+  ],
+  "coping": [
+   "Try one small activity you used to enjoy.",
+   "Step outside for a short walk or some daylight.",
+   "Reach out to one person today, even briefly."
+  ],
+  "seek_help": "If low mood lasts more than two weeks, please speak to a doctor or counsellor.",
+  "safety_note": "Ask for help early; you do not need to wait until it is severe."
+ },
+ "loneliness": {
+  "title": "Loneliness",
+  "description": "Loneliness is the pain of feeling disconnected from others, even around people.",
+  "common_signs": [
+   "feeling unseen",
+   "missing closeness",
+   "withdrawing"
+  ],
+  "coping": [
+   "Send a short message to someone you trust.",
+   "Join one small group or activity, online or offline.",
+   "Spend a few minutes somewhere with other people around."
+  ],
+  "seek_help": "If loneliness feels heavy for a long time, a counsellor or support group can help.",
+  "safety_note": "Many people feel this way; reaching out is a strength."
+ },
+ "sleep_problems": {
+  "title": "Sleep problems",
+  "description": "Sleep difficulties include trouble falling asleep, waking often or sleeping too little.",
+  "common_signs": [
+   "lying awake",
+   "waking early",
+   "daytime tiredness"
+  ],
+  "coping": [
+   "Keep a regular bedtime and wake time.",
+   "Avoid screens for 30 minutes before bed.",
+   "If awake for a long time, get up and do something calm."
+  ],
+  "seek_help": "If sleep problems last several weeks, talk to a doctor.",
+  "safety_note": "This tool does not advise on sleep medication."
+ },
+ "academic_stress": {
+  "title": "Academic stress",
+  "description": "Pressure from exams, grades, deadlines or expectations about studies.",
+  "common_signs": [
+   "fear of failing",
+   "procrastination",
+   "comparing with others"
+  ],
+  "coping": [
+   "Make a simple study plan with short blocks and breaks.",
+   "Start with the smallest topic to build momentum.",
+   "Talk to a teacher or friend about what is unclear."
+  ],
+  "seek_help": "If study pressure affects sleep or health, talk to a college counsellor.",
+  "safety_note": "Grades do not define your worth."
+ },
+ "work_stress": {
+  "title": "Work stress",
+  "description": "Strain from workload, deadlines, conflict or job insecurity.",
+  "common_signs": [
+   "dreading work",
+   "long hours",
+   "difficulty switching off"
+  ],
+  "coping": [
+   "Pick your top three priorities for tomorrow.",
+   "Take short breaks during the day.",
+   "Try to set a clear end to your work day."
+  ],
+  "seek_help": "If work stress is affecting health, consider talking to a professional or your workplace support service.",
+  "safety_note": "Your wellbeing matters more than any single task."
+ },
+ "burnout": {
+  "title": "Burnout",
+  "description": "Burnout is deep exhaustion from long-term stress, often with cynicism and low drive.",
+  "common_signs": [
+   "emotional exhaustion",
+   "detachment",
+   "reduced motivation"
+  ],
+  "coping": [
+   "Protect one small block of rest each day.",
+   "Say no to one non-essential demand this week.",
+   "Talk to someone about your workload."
+  ],
+  "seek_help": "Persistent exhaustion deserves a check-in with a doctor or counsellor.",
+  "safety_note": "Rest is not laziness."
+ },
+ "overthinking": {
+  "title": "Overthinking",
+  "description": "Overthinking is repeating the same thoughts or worries without reaching a solution.",
+  "common_signs": [
+   "replaying events",
+   "what-if thoughts",
+   "trouble switching off"
+  ],
+  "coping": [
+   "Set a 10-minute worry time, then move on.",
+   "Try grounding by naming 5 things you can see.",
+   "Ask what is one thing you can do about this today."
+  ],
+  "seek_help": "If thoughts feel uncontrollable, a counsellor can teach helpful strategies.",
+  "safety_note": "Thoughts are not facts."
+ },
+ "anger": {
+  "title": "Anger",
+  "description": "Anger is a natural emotion that often sits on top of hurt, stress or feeling unheard.",
+  "common_signs": [
+   "irritability",
+   "tension",
+   "snapping at others"
+  ],
+  "coping": [
+   "Pause and take a few slow breaths before responding.",
+   "Step away for a short walk to cool down.",
+   "Name what may be underneath the anger, like hurt or stress."
+  ],
+  "seek_help": "If anger often leads to regret or conflict, consider talking to a counsellor.",
+  "safety_note": "If you feel you might hurt someone, step away and contact emergency support."
+ },
+ "social_isolation": {
+  "title": "Social isolation",
+  "description": "Social isolation is spending much less time with others than you would like or need.",
+  "common_signs": [
+   "avoiding people",
+   "staying in",
+   "ignoring messages"
+  ],
+  "coping": [
+   "Plan one small, low-pressure social moment.",
+   "Reply to one message you have been putting off.",
+   "Tell someone you trust that you have been withdrawing."
+  ],
+  "seek_help": "If you keep avoiding people for weeks, consider speaking to a professional.",
+  "safety_note": "Small steps count."
+ },
+ "healthy_coping": {
+  "title": "Healthy coping",
+  "description": "Simple habits that support emotional wellbeing.",
+  "common_signs": [],
+  "coping": [
+   "Move your body for 10 minutes.",
+   "Keep regular meals and sleep.",
+   "Spend a little time on something you enjoy."
+  ],
+  "seek_help": "Self-care helps, but it does not replace professional support when you need it.",
+  "safety_note": "Choose what feels realistic today."
+ },
+ "breathing_exercises": {
+  "title": "Breathing exercises",
+  "description": "Slow breathing can calm the body's stress response.",
+  "common_signs": [],
+  "coping": [
+   "Breathe in for 4 counts and out for 6, five times.",
+   "Rest a hand on your belly and breathe slowly into it.",
+   "Try box breathing with 4 counts each for in, hold, out and hold."
+  ],
+  "seek_help": "If breathing exercises make you dizzy, stop and breathe normally.",
+  "safety_note": "Stop if you feel unwell."
+ },
+ "grounding_techniques": {
+  "title": "Grounding techniques",
+  "description": "Grounding brings attention back to the present moment.",
+  "common_signs": [],
+  "coping": [
+   "Try 5-4-3-2-1 grounding by naming 5 things you see, 4 you feel, 3 you hear, 2 you smell and 1 you taste.",
+   "Press your feet into the floor and notice the sensation.",
+   "Describe your surroundings out loud in detail."
+  ],
+  "seek_help": "If distress stays intense, reach out to someone you trust.",
+  "safety_note": "Go at your own pace."
+ },
+ "when_to_seek_help": {
+  "title": "When to seek professional help",
+  "description": "Professional support helps when distress is persistent or affects daily life.",
+  "common_signs": [
+   "distress lasting weeks",
+   "trouble at school, work or in relationships",
+   "feeling unable to cope"
+  ],
+  "coping": [
+   "Consider talking to a counsellor, doctor or therapist.",
+   "Tell someone you trust that you are struggling.",
+   "Ask your college or workplace about support services."
+  ],
+  "seek_help": "If you ever feel unsafe, contact emergency services right away.",
+  "safety_note": "Asking for help is a sign of strength."
+ },
+ "emergency_support": {
+  "title": "Emergency support",
+  "description": "Steps to take if you or someone else may be in immediate danger.",
+  "common_signs": [
+   "thoughts of self-harm",
+   "thoughts of harming others",
+   "feeling unsafe"
+  ],
+  "coping": [
+   "Contact your local emergency service or a crisis line now.",
+   "Go to the nearest emergency department.",
+   "Stay with someone you trust and tell them how you feel."
+  ],
+  "seek_help": "Do not wait; urgent support is available.",
+  "safety_note": "Emergency numbers differ by country and are set in the app configuration."
+ },
+ "case_stress": {
+  "title": "Worry about the case or court",
+  "description": "Waiting for hearings, repeating your story and facing the legal process can feel exhausting and frightening.",
+  "common_signs": [
+   "fear before hearings",
+   "sleeplessness",
+   "feeling helpless about what will happen"
+  ],
+  "coping": [
+   "Ask your lawyer or support person to explain the next step in simple words.",
+   "Write your questions on a paper and keep it with you on the day of the hearing.",
+   "Plan for someone you trust to sit with you on the day of the hearing.",
+   "Take a few slow breaths before you enter the room, and drink some water."
+  ],
+  "seek_help": "A counsellor or victim-support officer can walk with you through the process.",
+  "safety_note": "You are not alone in this process."
+ },
+ "fear_safety": {
+  "title": "Fear and feeling unsafe",
+  "description": "Fear can stay in the body for a long time after a frightening experience.",
+  "common_signs": [
+   "being jumpy",
+   "checking doors or phone again and again",
+   "avoiding places"
+  ],
+  "coping": [
+   "Think of one place where you feel a little safer, and spend some time there.",
+   "Keep the number of one trusted person ready on your phone.",
+   "Press your feet on the floor and name five things you can see around you.",
+   "Tell one trusted person that you are feeling unsafe, so you are not carrying it alone."
+  ],
+  "seek_help": "If you feel unsafe right now, please contact the local emergency number or someone nearby.",
+  "safety_note": "Your safety comes first."
+ },
+ "shame_guilt": {
+  "title": "Guilt or shame",
+  "description": "Many people blame themselves for things that were never in their control.",
+  "common_signs": [
+   "self-blame",
+   "hiding feelings",
+   "feeling small"
+  ],
+  "coping": [
+   "Speak to yourself the way you would speak to a dear friend in the same situation.",
+   "Share this feeling with one person who will not judge you.",
+   "Write down the thought, and then write what you would tell a friend who had the same thought."
+  ],
+  "seek_help": "A counsellor can help you carry this feeling in a lighter way.",
+  "safety_note": "Feeling guilty does not mean you did something wrong."
+ },
+ "upsetting_memories": {
+  "title": "Upsetting memories",
+  "description": "Painful memories can come back suddenly, even when you try to push them away.",
+  "common_signs": [
+   "flashbacks",
+   "bad dreams",
+   "feeling as if it is happening again"
+  ],
+  "coping": [
+   "When a memory comes, look around and name five things you can see right now.",
+   "Put your hand on your chest and breathe slowly until the feeling passes.",
+   "Remind yourself that this is a memory and it is not happening now.",
+   "Splash some cool water on your face or hold a warm cup of chai in both hands."
+  ],
+  "seek_help": "If memories keep disturbing your sleep or day, a trained counsellor can help.",
+  "safety_note": "These reactions are common and they can ease with support."
+ }
+}

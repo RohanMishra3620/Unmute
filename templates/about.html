@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+{% block title %}About · {{ app_name }}{% endblock %}
+{% block bodyclass %}page{% endblock %}
+{% block body %}
+<header class="site-header">{{ ui.logo() }}{{ ui.nav() }}</header>
+<div class="banner" role="img" aria-label="A person resting under a tree and watching the sunset by a lake"></div>
+<main id="main" class="content">
+  <h1>About {{ app_name }}</h1>
+  <p class="meta">It's okay to feel. It's okay to talk.</p>
+
+  <section class="panel"><h2><span class="dot"></span>What is Unmute?</h2>
+    <p class="about-p">Unmute is a quiet place to talk about how you are feeling. It is made for people who are going through a hard time, such as victims of atrocities who are waiting for an investigation, a trial or compensation, and who may not have someone to talk to every day.</p>
+    <p class="about-p">You chat for a few minutes, in simple words. At the end, you get a short reflection of what you shared. The idea is to notice changes in your well-being early, so that the right human support can reach you in time.</p>
+  </section>
+
+  <section class="panel leaf"><h2><span class="dot"></span>How your {{ minutes }}-minute session works</h2>
+    <ol class="steps">
+      <li><span><b>Talk freely.</b> Type in your own words, or tap a quick reply. There are no right or wrong answers.</span></li>
+      <li><span><b>We listen for your feelings.</b> The chat looks at the words you use to understand stress, fear, worry or low mood, and checks for your safety.</span></li>
+      <li><span><b>See your reflection.</b> You get a simple report with the feelings noticed and a few small steps you can try.</span></li>
+    </ol>
+  </section>
+
+  <div class="grid2">
+    <section class="panel"><h2><span class="dot"></span>Your privacy</h2>
+      <p class="about-p">We do not ask for your name, phone number or address. You can delete your session and report at any time from the report page.</p></section>
+    <section class="panel"><h2><span class="dot"></span>What Unmute is not</h2>
+      <p class="about-p">Unmute is an AI support tool. It is not a doctor, therapist or emergency service, and it does not give a diagnosis. This is an early prototype.</p></section>
+  </div>
+
+  <section class="panel alert"><h2>If you are in danger or thinking of hurting yourself</h2>
+    <p>{{ emergency_message }}</p>
+    {% if contacts %}<ul class="list">{% for c in contacts %}<li>{{ c.label }}: <strong><a href="tel:{{ c.number|replace(' ', '') }}">{{ c.number }}</a></strong></li>{% endfor %}</ul>{% endif %}
+  </section>
+
+  <div class="actions"><button class="btn primary" type="button" data-start style="font-size:1rem;padding:14px 28px">Start a session</button></div>
+</main>
+{% endblock %}
